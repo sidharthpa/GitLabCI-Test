@@ -1,8 +1,8 @@
 before_script:
   - apt-get update
-  - apt-get install python3-dev python3-pip
-  - pip3 install --upgrade pip setuptools
-  - pip install flask gunicorn requests flask_wtf
+  - apt-get install -y python3-dev python3-pip
+  - python3 -m pip install --upgrade pip setuptools
+  - python3 -m pip install flask gunicorn requests flask_wtf
   - export FLASK_APP=Flask.py
 run_app:
   script:
