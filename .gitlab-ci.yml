@@ -8,4 +8,4 @@ before_script:
   - export LANG=C.UTF-8
 run_app:
   script:
-    - flask run --host=0.0.0.0
+    - flask run
