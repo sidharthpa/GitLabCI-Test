@@ -4,6 +4,8 @@ before_script:
   - python3 -m pip install --upgrade pip setuptools
   - python3 -m pip install flask gunicorn requests flask_wtf
   - export FLASK_APP=Flask.py
+  - export LC_ALL=C.UTF-8
+  - export LANG=C.UTF-8
 run_app:
   script:
     - flask run --host=0.0.0.0
